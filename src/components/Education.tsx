@@ -33,8 +33,9 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20 px-6 bg-muted/30">
-      <div className="max-w-6xl mx-auto">
+    <section className="scroll-section relative overflow-y-auto bg-background">
+      <div className="min-h-screen flex flex-col justify-center px-8 py-20">
+        <div className="max-w-6xl mx-auto w-full">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-5xl font-bold mb-4">
             <span className="gradient-text">Education</span> & Languages
@@ -97,6 +98,7 @@ const Education = () => {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

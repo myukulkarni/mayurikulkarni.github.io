@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, Terminal, ChevronRight } from "lucide-react"
-import profilePhoto from "@/assets/profile-photo.png"
+import profilePhoto from "@/assets/profile-photo.jpg"
 
 const HeroNew = () => {
   return (
@@ -109,46 +109,22 @@ const HeroNew = () => {
           </div>
         </div>
 
-        {/* Right: Photo with unique design */}
+        {/* Right: Photo - Clean and Elegant */}
         <div className="relative flex items-center justify-center animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-          {/* Animated geometric shapes */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="absolute w-80 h-80 border-2 border-primary/30 rotate-45 animate-spin-slow" style={{animationDuration: '20s'}} />
-            <div className="absolute w-72 h-72 border-2 border-primary/20 -rotate-12 animate-spin-slow" style={{animationDuration: '15s', animationDirection: 'reverse'}} />
-            <div className="absolute w-96 h-96 border border-primary/10 rotate-12 animate-pulse" />
-          </div>
-          
-          {/* Photo container with hexagon-like shape using clip-path */}
-          <div className="relative z-10 group">
-            {/* Glowing background effect */}
-            <div className="absolute -inset-8 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 blur-3xl opacity-50 group-hover:opacity-70 transition-opacity animate-pulse" />
+          <div className="relative group">
+            {/* Subtle glow effect */}
+            <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-primary/30 to-primary/20 blur-2xl opacity-40 group-hover:opacity-60 transition-opacity" />
             
-            {/* Main photo container with custom clip-path */}
-            <div className="relative w-80 h-80 overflow-hidden shadow-2xl group-hover:shadow-primary/50 transition-all duration-500">
-              {/* Unique shape using clip-path (octagon-like) */}
-              <div 
-                className="w-full h-full bg-gradient-to-br from-primary/10 to-secondary/10 p-1"
-                style={{
-                  clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)'
-                }}
-              >
-                <div 
-                  className="w-full h-full overflow-hidden bg-background"
-                  style={{
-                    clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)'
-                  }}
-                >
-                  <img 
-                    src={profilePhoto} 
-                    alt="Mayuri Kulkarni - Full Stack Developer" 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                </div>
-              </div>
+            {/* Main photo container */}
+            <div className="relative w-80 h-80 overflow-hidden rounded-2xl shadow-2xl border-4 border-primary/20 group-hover:border-primary/40 transition-all duration-500">
+              <img 
+                src={profilePhoto} 
+                alt="Mayuri Kulkarni - Full Stack Developer" 
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+              />
               
-              {/* Decorative corner accents */}
-              <div className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-primary/60" />
-              <div className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-primary/60" />
+              {/* Subtle gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
             </div>
             
             {/* Floating status badge */}

@@ -1,12 +1,12 @@
 import { Card } from "@/components/ui/card";
-import { Trophy, TrendingUp, Users, Code } from "lucide-react";
+import { Trophy, TrendingUp, Code, GitBranch } from "lucide-react";
 
 const AboutNew = () => {
   const stats = [
     { icon: Code, label: "Projects", value: "12+", color: "text-primary" },
     { icon: TrendingUp, label: "GPA", value: "8.77", color: "text-primary" },
     { icon: Trophy, label: "Hackathons", value: "5+", color: "text-primary" },
-    { icon: Users, label: "Leadership", value: "2", color: "text-primary" },
+    { icon: GitBranch, label: "Tech Stack", value: "15+", color: "text-primary" },
   ];
 
   return (
@@ -17,49 +17,48 @@ const AboutNew = () => {
             <h2 className="text-5xl font-bold mb-4">
               About <span className="gradient-text">Me</span>
             </h2>
-            <p className="text-muted-foreground text-lg">Developer, Leader, Innovator</p>
+            <p className="text-muted-foreground text-lg">Full Stack Developer & Problem Solver</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Left: Description */}
             <div className="space-y-6 animate-fade-in-up">
               <Card className="p-8 border-2">
-                <h3 className="text-2xl font-bold mb-4 text-primary">Who I Am</h3>
+                <h3 className="text-2xl font-bold mb-4 text-primary">Technical Profile</h3>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
                     I'm a <strong className="text-foreground">Full Stack Developer</strong> pursuing BTech in Computer Science 
-                    at SKNSCOE Pune with a passion for creating impactful web applications.
+                    at SKNSCOE Pune, specializing in building scalable web applications with modern frameworks and architectures.
                   </p>
                   <p>
-                    As <strong className="text-foreground">President of the Cultural Club</strong> and{" "}
-                    <strong className="text-foreground">Vice President of Hackbreakers Coding Club</strong>, 
-                    I combine technical expertise with leadership to drive innovation and foster collaborative environments.
+                    My technical expertise spans <strong className="text-foreground">React, Django, PostgreSQL, and REST APIs</strong>, 
+                    with hands-on experience in developing end-to-end solutions from database design to responsive frontend interfaces.
                   </p>
                   <p>
-                    My journey spans from competitive coding to full-stack development, with a focus on 
-                    building scalable solutions using modern technologies like React, Django, and PostgreSQL.
+                    I focus on <strong className="text-foreground">clean code, performance optimization, and best practices</strong>, 
+                    utilizing Git workflows, agile methodologies, and continuous integration to deliver production-ready applications.
                   </p>
                 </div>
               </Card>
 
               <Card className="p-8 border-2 bg-primary/5">
-                <h3 className="text-2xl font-bold mb-4">Beyond Code</h3>
+                <h3 className="text-2xl font-bold mb-4">Tech Focus Areas</h3>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary" />
-                    <p className="text-muted-foreground">🎵 Music enthusiast & dancer</p>
+                    <p className="text-muted-foreground">💻 Full Stack Development (MERN/Django Stack)</p>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary" />
-                    <p className="text-muted-foreground">📚 Avid reader & continuous learner</p>
+                    <p className="text-muted-foreground">🗄️ Database Architecture & Query Optimization</p>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary" />
-                    <p className="text-muted-foreground">🎤 Public speaker & event organizer</p>
+                    <p className="text-muted-foreground">🔧 RESTful API Design & Integration</p>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary" />
-                    <p className="text-muted-foreground">🌱 Community builder & mentor</p>
+                    <p className="text-muted-foreground">🚀 DevOps & Cloud Deployment (AWS, Docker)</p>
                   </div>
                 </div>
               </Card>

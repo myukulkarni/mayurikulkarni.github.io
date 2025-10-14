@@ -45,10 +45,10 @@ export function AppSidebar() {
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton
                     onClick={() => scrollToSection(item.section)}
-                    className="hover:bg-primary/10 transition-colors justify-center"
+                    className="hover:bg-primary/10 transition-colors justify-center h-14"
                     tooltip={item.title}
                   >
-                    <item.icon className="h-5 w-5" />
+                    <item.icon className="h-7 w-7 text-primary" />
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}

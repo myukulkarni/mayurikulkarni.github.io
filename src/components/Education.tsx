@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { GraduationCap, BookOpen } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 
 const Education = () => {
   const education = [
@@ -26,24 +26,18 @@ const Education = () => {
     },
   ];
 
-  const languages = [
-    { name: "English", level: "Full professional proficiency" },
-    { name: "Hindi", level: "Full professional proficiency" },
-    { name: "Marathi", level: "Native" },
-  ];
-
   return (
     <section className="scroll-section relative overflow-y-auto bg-background">
       <div className="min-h-screen flex flex-col justify-center px-8 py-20">
         <div className="max-w-6xl mx-auto w-full">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-5xl font-bold mb-4">
-            <span className="gradient-text">Education</span> & Languages
+            <span className="gradient-text">Education</span>
           </h2>
-          <p className="text-muted-foreground text-lg">Academic background</p>
+          <p className="text-muted-foreground text-lg">Academic background and qualifications</p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-3 gap-8">
           {education.map((edu, idx) => (
             <Card 
               key={idx} 
@@ -68,35 +62,6 @@ const Education = () => {
               <p className="text-lg font-semibold gradient-text">{edu.score}</p>
             </Card>
           ))}
-        </div>
-
-        {/* Languages */}
-        <Card className="glass-card p-8 max-w-3xl mx-auto">
-          <div className="flex items-center gap-3 mb-6">
-            <BookOpen className="w-8 h-8 text-primary" />
-            <h3 className="text-3xl font-bold">Languages</h3>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            {languages.map((lang, idx) => (
-              <div key={idx} className="text-center">
-                <p className="text-xl font-semibold mb-1">{lang.name}</p>
-                <p className="text-sm text-muted-foreground">{lang.level}</p>
-              </div>
-            ))}
-          </div>
-        </Card>
-
-        {/* Interests */}
-        <div className="mt-12 text-center">
-          <h4 className="text-2xl font-bold mb-6">Interests & Hobbies</h4>
-          <div className="flex flex-wrap gap-4 justify-center">
-            {["Travelling", "Writing Scripts & Poems", "Reading", "Movies", "Anchoring"].map((interest) => (
-              <Card key={interest} className="glass-card px-6 py-3 hover:scale-105 transition-transform">
-                <p className="font-medium">{interest}</p>
-              </Card>
-            ))}
-          </div>
         </div>
       </div>
       </div>

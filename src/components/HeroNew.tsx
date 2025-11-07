@@ -25,7 +25,7 @@ const HeroNew = () => {
           
           <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-3 sm:mb-4 tracking-tight">
-              Yoo! It's{" "}
+              Heyy! I'm{" "}
               <span className="gradient-text block mt-1 sm:mt-2">Mayuri Kulkarni</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg">

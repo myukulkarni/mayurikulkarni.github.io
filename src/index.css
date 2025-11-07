@@ -9,24 +9,24 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 10%;
+    --foreground: 0 0% 20%;
 
     --card: 0 0% 98%;
-    --card-foreground: 0 0% 10%;
+    --card-foreground: 0 0% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover-foreground: 0 0% 20%;
 
-    --primary: 142 76% 36%;
+    --primary: 0 0% 30%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 142 50% 50%;
+    --secondary: 0 0% 50%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 40%;
 
-    --accent: 142 76% 36%;
+    --accent: 0 0% 35%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -34,14 +34,11 @@ All colors MUST be HSL.
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 142 76% 36%;
+    --ring: 0 0% 40%;
 
     --radius: 0.75rem;
 
-    /* Custom developer portfolio colors - Green & Grey theme */
-    --emerald: 142 76% 36%;
-    --emerald-light: 142 50% 50%;
-    --emerald-dark: 142 86% 25%;
+    /* Simple Grey & White theme */
     --grey-50: 0 0% 98%;
     --grey-100: 0 0% 96%;
     --grey-800: 0 0% 20%;
@@ -50,15 +47,15 @@ All colors MUST be HSL.
     --glass-border: 0 0% 90%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(142 50% 50%) 100%);
-    --gradient-mesh: radial-gradient(at 0% 0%, hsl(142 76% 36% / 0.15) 0px, transparent 50%),
-                      radial-gradient(at 100% 0%, hsl(142 50% 50% / 0.1) 0px, transparent 50%),
-                      radial-gradient(at 100% 100%, hsl(142 76% 36% / 0.1) 0px, transparent 50%),
-                      radial-gradient(at 0% 100%, hsl(142 86% 25% / 0.15) 0px, transparent 50%);
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 30%) 0%, hsl(0 0% 50%) 100%);
+    --gradient-mesh: radial-gradient(at 0% 0%, hsl(0 0% 30% / 0.1) 0px, transparent 50%),
+                      radial-gradient(at 100% 0%, hsl(0 0% 40% / 0.08) 0px, transparent 50%),
+                      radial-gradient(at 100% 100%, hsl(0 0% 35% / 0.08) 0px, transparent 50%),
+                      radial-gradient(at 0% 100%, hsl(0 0% 30% / 0.1) 0px, transparent 50%);
     
     /* Shadows */
     --shadow-glass: 0 8px 32px 0 hsl(0 0% 0% / 0.08);
-    --shadow-glow: 0 0 60px hsl(142 76% 36% / 0.2);
+    --shadow-glow: 0 0 60px hsl(0 0% 40% / 0.2);
     --shadow-card: 0 4px 20px 0 hsl(0 0% 0% / 0.05);
     
     /* Animations */
@@ -66,36 +63,36 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 0 0% 8%;
+    --background: 0 0% 15%;
     --foreground: 0 0% 98%;
 
-    --card: 0 0% 12%;
+    --card: 0 0% 18%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 10%;
+    --popover: 0 0% 15%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 142 76% 36%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 0% 70%;
+    --primary-foreground: 0 0% 10%;
 
-    --secondary: 142 50% 50%;
-    --secondary-foreground: 0 0% 10%;
+    --secondary: 0 0% 50%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 142 76% 36%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 0% 60%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 142 76% 36%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 0 0% 60%;
 
-    --glass-bg: 0 0% 10%;
-    --glass-border: 0 0% 20%;
+    --glass-bg: 0 0% 15%;
+    --glass-border: 0 0% 25%;
   }
 }
 
